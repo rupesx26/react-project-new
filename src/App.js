@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import NewApp from './App2.js';
+import ChannelsField from './components/ChannelsField'
+import TopNews from './containers/TopNews'
+import Button from './containers/Button'
 
 class App extends Component {
   render() {
@@ -15,6 +18,11 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <NewApp />
+          <div>
+             <ChannelsField />
+             <Button />
+             <TopNews />
+          </div>
       </div>
     );
   }
